@@ -1,0 +1,18 @@
+﻿@page "/"
+@inject IDemoTransient transient;
+@inject IDemoScoped scoped;
+@inject IDemoSingleton singleton;
+
+
+<PageTitle>Index</PageTitle>
+<h2>Transient</h2>
+<h4>TimeStamp: @transient.TimeStamp</h4>
+<h4>Random: @transient.Rand</h4>
+
+<h2>Scoped</h2>
+<h4>TimeStamp: @scoped.TimeStamp</h4>
+<h4>Random: @scoped.Rand</h4>
+
+<h2>Singleton</h2>
+<h4>TimeStamp: @singleton.TimeStamp</h4>
+<h4>Random: @singleton.Rand</h4>
